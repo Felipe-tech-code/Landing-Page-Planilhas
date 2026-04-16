@@ -1,4 +1,4 @@
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --gold:        #C9A84C;
     --gold-light:  #E8C97A;
@@ -84,17 +84,61 @@
   .bar-fill.gold { background: var(--gold); }
   .bar-value { font-size: 0.78rem; font-family: var(--serif); width: 36px; }
 
-  /* SOLUÇÃO */
   .solution { padding: 8rem 0; background: var(--dark-2); border-top: 1px solid var(--border-b); border-bottom: 1px solid var(--border-b); }
   .solution-header { text-align: center; max-width: 680px; margin: 0 auto 5rem; }
   .solution-header p { color: var(--beige-dim); margin-top: 1.25rem; font-size: 1.05rem; }
-  .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--border-b); }
-  .feature-card { background: var(--dark-2); padding: 2.5rem 2rem; transition: background 0.2s; }
+  .features-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5px; background: var(--border-b); }
+  .feature-card { background: var(--dark-2); padding: 2.5rem 2rem; transition: background 0.2s; grid-column: span 2; }
   .feature-card:hover { background: var(--dark-3); }
+  .feature-card:nth-child(4) { grid-column: 2 / span 2; }
+  .feature-card:nth-child(5) { grid-column: 4 / span 2; }
   .feature-icon { width: 44px; height: 44px; border: 1px solid rgba(107,30,30,0.5); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.05rem; background: rgba(107,30,30,0.12); color: var(--gold); }
   .feature-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--cream); margin-bottom: 0.75rem; }
   .feature-card p { font-size: 0.88rem; color: var(--beige-dim); line-height: 1.7; }
   .feature-tag { display: inline-block; margin-top: 1.25rem; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-dim); border: 1px solid rgba(201,168,76,0.2); padding: 0.25rem 0.65rem; }
+
+  /* SHOWCASE — GALERIA DAS PLANILHAS */
+  .showcase { padding: 8rem 0; background: var(--dark); border-top: 1px solid var(--border-b); }
+  .showcase-header { text-align: center; max-width: 640px; margin: 0 auto 5rem; }
+  .showcase-header p { color: var(--beige-dim); margin-top: 1.25rem; }
+  .showcase-list { display: flex; flex-direction: column; gap: 0; }
+  .showcase-item { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 1px solid var(--border-b); }
+  .showcase-item:first-child { border-top: 1px solid var(--border-b); }
+  .showcase-item.reverse .showcase-img { order: 2; }
+  .showcase-item.reverse .showcase-info { order: 1; }
+  .showcase-img {
+    background: var(--dark-2);
+    border-right: 1px solid var(--border-b);
+    min-height: 320px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1rem; padding: 2rem;
+    position: relative; overflow: hidden;
+    transition: background 0.2s;
+  }
+  .showcase-item.reverse .showcase-img { border-right: none; border-left: 1px solid var(--border-b); }
+  .showcase-img:hover { background: var(--dark-3); }
+  /* Placeholder — quando tiver imagem real, substitua este bloco por <img> */
+  .img-placeholder {
+    width: 100%; max-width: 420px; aspect-ratio: 16/9;
+    border: 1.5px dashed rgba(201,168,76,0.25);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.75rem;
+    background: rgba(107,30,30,0.06);
+    position: relative;
+  }
+  .img-placeholder i { font-size: 2rem; color: rgba(201,168,76,0.25); }
+  .img-placeholder span { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.35); }
+  /* Quando usar imagem real: <img src="..." class="sheet-preview"> */
+  .sheet-preview { width: 100%; max-width: 420px; aspect-ratio: 16/9; object-fit: cover; display: block; border: 1px solid var(--border-b); }
+  .showcase-num { position: absolute; top: 1.25rem; left: 1.5rem; font-family: var(--serif); font-size: 4rem; font-weight: 600; color: rgba(107,30,30,0.18); line-height: 1; pointer-events: none; }
+  .showcase-info { padding: 3rem 3.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1.25rem; }
+  .showcase-info .section-label { margin-bottom: 0; }
+  .showcase-info h3 { font-family: var(--serif); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: var(--cream); line-height: 1.2; }
+  .showcase-info h3 em { font-style: italic; color: var(--gold); }
+  .showcase-info p { font-size: 0.92rem; color: var(--beige-dim); line-height: 1.75; }
+  .showcase-features { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem; }
+  .showcase-features li { display: flex; gap: 0.65rem; align-items: center; font-size: 0.85rem; color: var(--beige-dim); }
+  .showcase-features li i { color: var(--gold); font-size: 0.7rem; flex-shrink: 0; width: 14px; }
 
   /* CONTEÚDO */
   .conteudo { padding: 8rem 0; background: var(--dark-2); border-top: 1px solid var(--border-b); border-bottom: 1px solid var(--border-b); }
@@ -231,11 +275,12 @@
   .footer-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--gold); }
   .footer-note { font-size: 0.78rem; color: var(--beige-dim); opacity: 0.45; }
 
-  /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
     .problem-grid, .features-grid, .plans-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .feature-card, .feature-card:nth-child(4), .feature-card:nth-child(5) { grid-column: span 1; }
     .tab-content.active { grid-template-columns: 1fr; }
     .hero-metrics { gap: 2rem; }
     .strip { padding: 1.25rem 1.5rem; }
@@ -243,4 +288,8 @@
     .garantia-box { padding: 2.5rem 1.5rem; }
     .carousel-outer::before, .carousel-outer::after { width: 50px; }
     .stars-summary { gap: 1.5rem; }
+    .showcase-item, .showcase-item.reverse .showcase-img, .showcase-item.reverse .showcase-info { grid-template-columns: 1fr; display: flex; flex-direction: column; }
+    .showcase-item.reverse .showcase-img { order: 0; border-left: none; border-bottom: 1px solid var(--border-b); }
+    .showcase-img { border-right: none; border-bottom: 1px solid var(--border-b); min-height: 220px; }
+    .showcase-info { padding: 2rem 1.5rem; }
   }
