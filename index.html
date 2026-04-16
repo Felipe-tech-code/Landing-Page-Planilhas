@@ -312,40 +312,48 @@
     <div class="pricing-header fade-in">
       <span class="section-label">Escolha seu plano</span>
       <h2>Invista no que faz sentido <em>para você agora.</em></h2>
-      <p>Escolha apenas o que precisa — ou leve tudo com desconto exclusivo no pacote completo.</p>
+      <p>Escolha um dos combos e economize — ou compre planilhas individuais se preferir começar por uma área específica.</p>
     </div>
+
+    <!-- COMBOS -->
     <div class="plans-grid">
+
+      <!-- PLANO FINANCEIRO -->
       <div class="plan fade-in">
-        <div class="plan-name">Plano 01</div>
+        <div class="plan-name">Combo 01</div>
         <div class="plan-title">Financeiro</div>
-        <div class="plan-desc">As duas planilhas financeiras para quem quer separar e controlar o dinheiro do escritório e o pessoal.</div>
+        <div class="plan-desc">As duas planilhas financeiras para separar e controlar o dinheiro do escritório e o pessoal.</div>
         <div class="plan-price">
-          <div class="de">De R$ 197</div>
-          <div class="por"><span class="currency">R$</span><span class="amount">97</span></div>
-          <div class="parcela">ou 3x de R$ 33,90</div>
+          <div class="de">De R$ 494</div>
+          <div class="por"><span class="currency">R$</span><span class="amount">147</span></div>
+          <div class="parcela">ou 3x de R$ 52,00</div>
+          <div class="economy-tag"><i class="fa-solid fa-tag"></i> Você economiza R$ 347</div>
         </div>
         <ul class="plan-features">
           <li>Financeira Empresarial</li>
           <li>Financeira Pessoal</li>
-          <li>Fluxo de caixa + DRE</li>
+          <li>Fluxo de caixa + DRE completo</li>
           <li>Dashboard financeiro automático</li>
-          <li>Controle de honorários</li>
+          <li>Controle de honorários e despesas</li>
           <li>Metas e patrimônio pessoal</li>
           <li class="inactive">Controle de Contratos</li>
           <li class="inactive">Processos Administrativos</li>
           <li class="inactive">Processos Judiciais</li>
         </ul>
-        <a href="#" class="plan-cta outline">Quero este plano</a>
+        <a href="#" class="plan-cta outline">Quero este combo</a>
       </div>
+
+      <!-- COMBO COMPLETO — destaque central -->
       <div class="plan featured fade-in">
-        <div class="plan-badge">⭐ Mais popular</div>
-        <div class="plan-name">Plano 02</div>
-        <div class="plan-title">Completo</div>
-        <div class="plan-desc">As 5 planilhas. O escritório organizado de ponta a ponta — financeiro, contratos e processos.</div>
+        <div class="plan-badge"><i class="fa-solid fa-star" style="font-size:0.6rem;"></i> Melhor custo-benefício</div>
+        <div class="plan-name">Combo Completo</div>
+        <div class="plan-title">Todas as 5</div>
+        <div class="plan-desc">O escritório organizado de ponta a ponta. Financeiro, contratos e processos em um único acesso.</div>
         <div class="plan-price">
-          <div class="de">De R$ 497</div>
-          <div class="por"><span class="currency">R$</span><span class="amount">247</span></div>
-          <div class="parcela">ou 6x de R$ 44,70</div>
+          <div class="de">De R$ 875</div>
+          <div class="por"><span class="currency">R$</span><span class="amount">297</span></div>
+          <div class="parcela">ou 6x de R$ 52,70</div>
+          <div class="economy-tag economy-gold"><i class="fa-solid fa-tag"></i> Você economiza R$ 578</div>
         </div>
         <ul class="plan-features">
           <li>Financeira Empresarial</li>
@@ -354,19 +362,22 @@
           <li>Processos Administrativos</li>
           <li>Processos Judiciais</li>
           <li>Guia de implementação incluso</li>
-          <li>Maior economia por planilha</li>
           <li>Atualizações por 12 meses</li>
+          <li>Menor preço por planilha</li>
         </ul>
-        <a href="#" class="plan-cta gold">Quero o plano completo</a>
+        <a href="#" class="plan-cta gold">Quero o combo completo</a>
       </div>
+
+      <!-- PLANO JURÍDICO -->
       <div class="plan fade-in">
-        <div class="plan-name">Plano 03</div>
+        <div class="plan-name">Combo 02</div>
         <div class="plan-title">Jurídico</div>
         <div class="plan-desc">As três planilhas operacionais para controle completo de contratos e processos do escritório.</div>
         <div class="plan-price">
-          <div class="de">De R$ 297</div>
-          <div class="por"><span class="currency">R$</span><span class="amount">147</span></div>
-          <div class="parcela">ou 3x de R$ 52,90</div>
+          <div class="de">De R$ 381</div>
+          <div class="por"><span class="currency">R$</span><span class="amount">197</span></div>
+          <div class="parcela">ou 3x de R$ 69,70</div>
+          <div class="economy-tag"><i class="fa-solid fa-tag"></i> Você economiza R$ 184</div>
         </div>
         <ul class="plan-features">
           <li>Controle de Contratos</li>
@@ -378,9 +389,99 @@
           <li class="inactive">Financeira Empresarial</li>
           <li class="inactive">Financeira Pessoal</li>
         </ul>
-        <a href="#" class="plan-cta outline">Quero este plano</a>
+        <a href="#" class="plan-cta outline">Quero este combo</a>
       </div>
+
+    </div><!-- /plans-grid -->
+
+    <!-- BOTÃO EXPANDIR INDIVIDUAIS -->
+    <div class="individual-toggle fade-in">
+      <button class="individual-btn" id="btnIndividual" onclick="toggleIndividual()">
+        <span id="btnIndividualText">Prefiro comprar uma planilha individual</span>
+        <i class="fa-solid fa-chevron-down" id="btnIndividualIcon"></i>
+      </button>
+      <p class="individual-hint">Cada planilha também está disponível separadamente</p>
     </div>
+
+    <!-- GRID INDIVIDUAIS — oculto por padrão -->
+    <div class="individual-grid" id="individualGrid">
+      <div class="individual-header">
+        <span class="section-label" style="text-align:center;display:block;">Planilhas individuais</span>
+        <p>Comece pela área que faz mais sentido para o seu momento.</p>
+      </div>
+      <div class="ind-grid">
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-coins"></i></div>
+          <div class="ind-num">01</div>
+          <div class="ind-title">Financeira Empresarial</div>
+          <div class="ind-desc">Fluxo de caixa, honorários, despesas, DRE e dashboard do escritório.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 297</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">97</span></span>
+          </div>
+          <a href="#" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-house-user"></i></div>
+          <div class="ind-num">02</div>
+          <div class="ind-title">Financeira Pessoal</div>
+          <div class="ind-desc">Orçamento mensal, cartões, metas financeiras e patrimônio pessoal.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 197</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">57</span></span>
+          </div>
+          <a href="#" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="ind-num">03</div>
+          <div class="ind-title">Processos Judiciais</div>
+          <div class="ind-desc">Painel de processos, prazos, audiências e andamentos por advogado.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 127</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">67</span></span>
+          </div>
+          <a href="#" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+          <div class="ind-num">04</div>
+          <div class="ind-title">Processos Administrativos</div>
+          <div class="ind-desc">Protocolos, documentos enviados e recebidos, prazos internos do setor.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 127</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">67</span></span>
+          </div>
+          <a href="#" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-file-contract"></i></div>
+          <div class="ind-num">05</div>
+          <div class="ind-title">Controle de Contratos</div>
+          <div class="ind-desc">Cadastro, vencimentos, renovações e histórico de todos os contratos.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 127</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">67</span></span>
+          </div>
+          <a href="#" class="ind-cta">Comprar agora</a>
+        </div>
+
+      </div><!-- /ind-grid -->
+
+      <!-- Nudge para o combo -->
+      <div class="ind-nudge fade-in">
+        <i class="fa-solid fa-circle-info" style="color:var(--gold);font-size:0.9rem;flex-shrink:0;margin-top:0.1rem;"></i>
+        <p>Comprando o <strong style="color:var(--cream);">Combo Completo por R$ 297</strong> você leva as 5 planilhas e economiza R$ 281 em relação às individuais somadas.</p>
+        <a href="#planos" class="ind-nudge-btn" onclick="scrollToPlans()">Ver combos</a>
+      </div>
+
+    </div><!-- /individual-grid -->
+
   </div>
 </section>
 
@@ -556,6 +657,14 @@
     </div><!-- /carousel-track -->
   </div><!-- /carousel-outer -->
 
+  <!-- Controles manuais -->
+  <div class="carousel-controls">
+    <button class="c-btn" id="btnPrev" title="Anterior">&#8592;</button>
+    <button class="c-btn" id="btnPause" title="Pausar">&#10074;&#10074;</button>
+    <button class="c-btn" id="btnNext" title="Próximo">&#8594;</button>
+  </div>
+</section>
+
 <!-- GARANTIA -->
 <section class="garantia" id="garantia">
   <div class="container">
@@ -601,6 +710,26 @@
 </footer>
 
 <script>
+  /* TOGGLE INDIVIDUAIS */
+  function toggleIndividual() {
+    const grid = document.getElementById('individualGrid');
+    const btn  = document.getElementById('btnIndividual');
+    const txt  = document.getElementById('btnIndividualText');
+    const open = grid.classList.toggle('open');
+    document.getElementById('btnIndividual').closest('button')?.classList.toggle('open', open);
+    document.querySelector('.individual-btn').classList.toggle('open', open);
+    txt.textContent = open ? 'Fechar planilhas individuais' : 'Prefiro comprar uma planilha individual';
+    if (open) {
+      setTimeout(() => {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 60);
+    }
+  }
+
+  function scrollToPlans() {
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+  }
+
   /* TABS */
   function switchTab(id, el) {
     document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
