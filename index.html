@@ -662,12 +662,6 @@
     </div><!-- /carousel-track -->
   </div><!-- /carousel-outer -->
 
-  <!-- Controles manuais -->
-  <div class="carousel-controls">
-    <button class="c-btn" id="btnPrev" title="Anterior">&#8592;</button>
-    <button class="c-btn" id="btnPause" title="Pausar">&#10074;&#10074;</button>
-    <button class="c-btn" id="btnNext" title="Próximo">&#8594;</button>
-  </div>
 </section>
 
 <!-- GARANTIA -->
@@ -792,15 +786,7 @@
 
   /* ── CARROSSEL ── */
   const track = document.getElementById('carouselTrack');
-  const pauseBtn = document.getElementById('btnPause');
   let paused = false;
-
-  /* Pausar / retomar */
-  pauseBtn.addEventListener('click', () => {
-    paused = !paused;
-    track.style.animationPlayState = paused ? 'paused' : 'running';
-    pauseBtn.innerHTML = paused ? '&#9654;' : '&#10074;&#10074;';
-  });
 
   /* Prev / Next — pausa a animação CSS e move com translateX */
   const STEP = 340 + 24; // largura do card + gap
@@ -809,7 +795,6 @@
     if (!paused) {
       paused = true;
       track.style.animationPlayState = 'paused';
-      pauseBtn.innerHTML = '&#9654;';
     }
     const style = window.getComputedStyle(track);
     const mat   = new DOMMatrixReadOnly(style.transform);
