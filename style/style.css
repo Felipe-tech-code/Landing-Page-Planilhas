@@ -218,7 +218,7 @@
   .feature-card:hover { background: var(--dark-3); }
   .feature-card:nth-child(4) { grid-column: 2 / span 2; }
   .feature-card:nth-child(5) { grid-column: 4 / span 2; }
-  .feature-icon { width: 44px; height: 44px; border: 1px solid rgba(107,30,30,0.5); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.05rem; background: transparent; color: var(--gold); }
+  .feature-icon { width: 44px; height: 44px; border: 1px solid rgba(107,30,30,0.5); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.05rem; background: rgba(107,30,30,0.12); color: var(--gold); }
   .feature-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--cream); margin-bottom: 0.75rem; }
   .feature-card p { font-size: 0.88rem; color: var(--beige-dim); line-height: 1.7; }
   .feature-tag { display: inline-block; margin-top: 1.25rem; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-dim); border: 1px solid rgba(201,168,76,0.2); padding: 0.25rem 0.65rem; }
@@ -408,7 +408,7 @@
   /* GARANTIA */
   .garantia { padding: 6rem 0; text-align: center; background: var(--dark-2); border-top: 1px solid var(--border-b); }
   .garantia-box { max-width: 680px; margin: 0 auto; border: 1px solid rgba(107,30,30,0.5); padding: 4rem; }
-  .garantia-seal { width: 80px; height: 80px; border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-family: var(--serif); font-size: 0.7rem; letter-spacing: 0.08em; color: var(--gold); text-align: center; line-height: 1.4; text-transform: uppercase; }
+  .garantia-seal { width: 120px; height: 120px; border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-family: var(--serif); font-size: 0.85rem; letter-spacing: 0.08em; color: var(--gold); text-align: center; line-height: 1.4; text-transform: uppercase; }
   .garantia h2 { font-size: 2rem; margin-bottom: 1rem; }
   .garantia p { color: var(--beige-dim); max-width: 480px; margin: 0 auto; font-size: 0.95rem; }
 
