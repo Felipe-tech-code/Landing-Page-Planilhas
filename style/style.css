@@ -188,7 +188,7 @@
   .strip { background: var(--dark-2); border-top: 1px solid var(--border-b); border-bottom: 1px solid var(--border-b); padding: 1.25rem 4rem; display: flex; align-items: center; gap: 3rem; overflow: hidden; }
   .strip-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--beige-dim); white-space: nowrap; flex-shrink: 0; }
   .strip-pills { display: flex; gap: 2.5rem; flex-wrap: wrap; }
-  .strip-pill { font-size: 0.8rem; color: rgba(221,208,184,0.35); white-space: nowrap; font-family: var(--serif); font-style: italic; }
+  .strip-pill { font-size: 1.01rem; color: rgba(221,208,184,0.35); white-space: nowrap; font-family: var(--serif); font-style: italic; }
 
   /* PROBLEMA */
   .problem { padding: 8rem 0; }
@@ -213,8 +213,8 @@
   .solution { padding: 8rem 0; background: var(--dark-2); border-top: 1px solid var(--border-b); border-bottom: 1px solid var(--border-b); }
   .solution-header { text-align: center; max-width: 680px; margin: 0 auto 5rem; }
   .solution-header p { color: var(--beige-dim); margin-top: 1.25rem; font-size: 1.05rem; }
-  .features-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5px; background: var(--border-b); }
-  .feature-card { background: var(--dark-2); padding: 2.5rem 2rem; transition: background 0.2s; grid-column: span 2; }
+  .features-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; background: transparent; }
+  .feature-card { background: var(--dark-2); padding: 2.5rem 2rem; transition: background 0.2s; grid-column: span 2; border: 1px solid var(--border-b); margin: 0.78rem;}
   .feature-card:hover { background: var(--dark-3); }
   .feature-card:nth-child(4) { grid-column: 2 / span 2; }
   .feature-card:nth-child(5) { grid-column: 4 / span 2; }
@@ -408,7 +408,7 @@
   /* GARANTIA */
   .garantia { padding: 6rem 0; text-align: center; background: var(--dark-2); border-top: 1px solid var(--border-b); }
   .garantia-box { max-width: 680px; margin: 0 auto; border: 1px solid rgba(107,30,30,0.5); padding: 4rem; }
-  .garantia-seal { width: 120px; height: 120px; border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-family: var(--serif); font-size: 0.85rem; letter-spacing: 0.08em; color: var(--gold); text-align: center; line-height: 1.4; text-transform: uppercase; }
+  .garantia-seal { width: 120px; height: 120px; border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-family: var(--serif); font-size: 0.rem; letter-spacing: 0.08em; color: var(--gold); text-align: center; line-height: 1.4; text-transform: uppercase; }
   .garantia h2 { font-size: 2rem; margin-bottom: 1rem; }
   .garantia p { color: var(--beige-dim); max-width: 480px; margin: 0 auto; font-size: 0.95rem; }
 
