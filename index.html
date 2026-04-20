@@ -20,7 +20,12 @@
     <li><a href="#avaliacoes">Avaliações</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="#planos" class="nav-cta">Ver planos</a>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" title="Alternar tema claro/escuro" onclick="toggleTheme()">
+      <i class="fa-solid fa-sun" id="themeIcon"></i>
+    </button>
+    <a href="#planos" class="nav-cta">Ver planos</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -753,9 +758,36 @@
   document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
   /* NAV SCROLL */
+  /* ── TEMA CLARO/ESCURO ── */
+  function getNavBg(scrolled) {
+    const light = document.documentElement.classList.contains('light');
+    return light
+      ? (scrolled ? 'rgba(250,248,243,0.98)' : 'rgba(250,248,243,0.92)')
+      : (scrolled ? 'rgba(14,10,10,0.98)'    : 'rgba(14,10,10,0.88)');
+  }
+
+  function toggleTheme() {
+    const isLight = document.documentElement.classList.toggle('light');
+    const icon    = document.getElementById('themeIcon');
+    /* Sol = modo escuro ativo (clicar vai para claro)
+       Lua = modo claro ativo  (clicar vai para escuro) */
+    icon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    localStorage.setItem('gjp-theme', isLight ? 'light' : 'dark');
+    document.querySelector('nav').style.background = getNavBg(window.scrollY > 60);
+  }
+
+  /* Inicializa tema salvo */
+  (function initTheme() {
+    if (localStorage.getItem('gjp-theme') === 'light') {
+      document.documentElement.classList.add('light');
+      const icon = document.getElementById('themeIcon');
+      if (icon) icon.className = 'fa-solid fa-moon';
+    }
+  })();
+
+  /* Nav scroll */
   window.addEventListener('scroll', () => {
-    document.querySelector('nav').style.background =
-      window.scrollY > 60 ? 'rgba(14,10,10,0.98)' : 'rgba(14,10,10,0.88)';
+    document.querySelector('nav').style.background = getNavBg(window.scrollY > 60);
   });
 
   /* ── CARROSSEL ── */
