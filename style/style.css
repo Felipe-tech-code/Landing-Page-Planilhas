@@ -71,6 +71,10 @@
     transition: opacity 0.35s;
   }
   html.light body::before { opacity: 0.045; }
+ 
+  html, body {
+  overflow-x: hidden;
+}
 
   /* ══════════════════════════════════════
      TEMA CLARO — OVERRIDES ESPECÍFICOS
