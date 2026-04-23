@@ -461,4 +461,13 @@
     .showcase-item.reverse .showcase-img { order: 0; border-left: none; border-bottom: 1px solid var(--border-b); }
     .showcase-img { border-right: none; border-bottom: 1px solid var(--border-b); min-height: 220px; }
     .showcase-info { padding: 2rem 1.5rem; }
+     .tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab {
+    flex: 0 0 auto;
+  }
   }
