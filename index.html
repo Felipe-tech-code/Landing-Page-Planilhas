@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestão Jurídica Pro — Planilhas para Escritórios de Advocacia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Gestão Jurídica Pro</span>
+  <ul class="nav-links">
+    <li><a href="#solucao">Soluções</a></li>
+    <li><a href="#planilhas">Planilhas</a></li>
+    <li><a href="#planos">Planos</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" title="Alternar tema claro/escuro" onclick="toggleTheme()">
+      <i class="fa-solid fa-sun" id="themeIcon"></i>
+    </button>
+    <a href="#planos" class="nav-cta">Ver planos</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-badge"><span></span> Exclusivo para Escritórios de Advocacia</div>
+    <h1>O escritório que você<br>gerencia merece <em>excelência</em><br>nos números.</h1>
+    <p class="hero-sub">5 planilhas profissionais para controle financeiro empresarial e pessoal, gestão de contratos, processos administrativos e judiciais — tudo calibrado para a realidade do escritório jurídico.</p>
+    <div class="hero-actions">
+      <a href="#planos" class="btn-primary">Quero começar agora</a>
+      <a href="#planilhas" class="btn-secondary">Conhecer as planilhas</a>
+    </div>
+    <div class="hero-metrics">
+      <div><span class="metric-num">5</span><span class="metric-label">Planilhas especializadas</span></div>
+      <div><span class="metric-num">3</span><span class="metric-label">Pacotes disponíveis</span></div>
+      <div><span class="metric-num">100%</span><span class="metric-label">Editável no Excel/Sheets</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <span class="strip-label">Ideal para</span>
+  <div class="strip-pills">
+    <span class="strip-pill">Escritórios Boutique</span>
+    <span class="strip-pill">Bancas Societárias</span>
+    <span class="strip-pill">Advogados Solo</span>
+    <span class="strip-pill">Departamentos Jurídicos</span>
+    <span class="strip-pill">Gestoras de Escritório</span>
+    <span class="strip-pill">Contabilidade Jurídica</span>
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section class="problem" id="problema">
+  <div class="container">
+    <div class="problem-grid">
+      <div>
+        <span class="section-label">O problema real</span>
+        <h2>A gestão <em>caótica</em> custa mais do que você imagina.</h2>
+        <div class="gold-line" style="margin:1.5rem 0;"></div>
+        <ul class="problem-list">
+          <li class="problem-item fade-in"><span class="problem-icon"><i class="fa-solid fa-triangle-exclamation"></i></span><div class="problem-text"><strong>Processos sem rastreamento</strong>Prazos esquecidos, protocolos perdidos e audiências que surgem de surpresa — tudo por falta de um sistema centralizado.</div></li>
+          <li class="problem-item fade-in"><span class="problem-icon"><i class="fa-solid fa-triangle-exclamation"></i></span><div class="problem-text"><strong>Saúde financeira invisível</strong>Você sabe quanto o escritório faturou esse mês? E as despesas fixas? Sem visão clara, decisões se tornam apostas.</div></li>
+          <li class="problem-item fade-in"><span class="problem-icon"><i class="fa-solid fa-triangle-exclamation"></i></span><div class="problem-text"><strong>Finanças pessoais misturadas</strong>A confusão entre o pessoal e o profissional é um dos maiores erros de gestão — e um dos mais perigosos.</div></li>
+          <li class="problem-item fade-in"><span class="problem-icon"><i class="fa-solid fa-triangle-exclamation"></i></span><div class="problem-text"><strong>Sem indicadores de performance</strong>Sem dados, não há evolução. Como saber se o setor administrativo está gerando valor?</div></li>
+        </ul>
+      </div>
+      <div>
+        <div class="problem-visual fade-in">
+          <div class="visual-header">Impacto da desorganização — diagnóstico típico</div>
+          <div class="bar-chart">
+            <div class="bar-row"><span class="bar-label">Tempo perdido</span><div class="bar-track"><div class="bar-fill red" style="width:82%"></div></div><span class="bar-value" style="color:var(--bordeaux)">82%</span></div>
+            <div class="bar-row"><span class="bar-label">Retrabalho</span><div class="bar-track"><div class="bar-fill red" style="width:67%"></div></div><span class="bar-value" style="color:var(--bordeaux)">67%</span></div>
+            <div class="bar-row"><span class="bar-label">Decisões cegas</span><div class="bar-track"><div class="bar-fill red" style="width:74%"></div></div><span class="bar-value" style="color:var(--bordeaux)">74%</span></div>
+            <div class="bar-row"><span class="bar-label">Prazos perdidos</span><div class="bar-track"><div class="bar-fill red" style="width:41%"></div></div><span class="bar-value" style="color:var(--bordeaux)">41%</span></div>
+            <div class="bar-row"><span class="bar-label">Visão financeira</span><div class="bar-track"><div class="bar-fill gold" style="width:23%"></div></div><span class="bar-value" style="color:var(--gold)">23%</span></div>
+          </div>
+          <p style="margin-top:2rem;font-size:0.73rem;color:var(--beige-dim);opacity:0.45;">* Pesquisa interna com gestores de escritórios jurídicos, 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="solution" id="solucao">
+  <div class="container">
+    <div class="solution-header fade-in">
+      <span class="section-label">A solução</span>
+      <h2>Cinco planilhas. <em>Um escritório</em> completamente organizado.</h2>
+      <p>Cada planilha foi desenhada para uma área específica do escritório — sem sobreposição, sem funções desnecessárias. Só o que você realmente precisa.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-in"><div class="feature-icon"><i class="fa-solid fa-coins"></i></div><h3>Financeira Empresarial</h3><p>Fluxo de caixa, honorários, despesas, DRE e dashboard financeiro do escritório em uma única planilha.</p><span class="feature-tag">Financeiro</span></div>
+      <div class="feature-card fade-in"><div class="feature-icon"><i class="fa-solid fa-house-user"></i></div><h3>Financeira Pessoal</h3><p>Controle de orçamento, gastos com cartão, metas e patrimônio — separado das finanças do escritório.</p><span class="feature-tag">Pessoal</span></div>
+      <div class="feature-card fade-in"><div class="feature-icon"><i class="fa-solid fa-file-contract"></i></div><h3>Controle de Contratos</h3><p>Registro, vencimentos, renovações e histórico de todos os contratos firmados com clientes e fornecedores.</p><span class="feature-tag">Contratual</span></div>
+      <div class="feature-card fade-in"><div class="feature-icon"><i class="fa-solid fa-clipboard-list"></i></div><h3>Processos Administrativos</h3><p>Protocolo de documentos, registro de atividades internas e controle de prazos do setor administrativo.</p><span class="feature-tag">Administrativo</span></div>
+      <div class="feature-card fade-in"><div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Processos Judiciais</h3><p>Painel completo de processos, controle de audiências, prazos processuais e andamentos por advogado.</p><span class="feature-tag">Jurídico</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE — GALERIA DAS PLANILHAS -->
+<section class="showcase" id="planilhas">
+  <div class="container">
+    <div class="showcase-header fade-in">
+      <span class="section-label">Conheça as planilhas</span>
+      <h2>Veja por dentro o que você <em>vai receber.</em></h2>
+      <p>Cada planilha com layout profissional, pronta para usar no dia seguinte à compra.</p>
+    </div>
+  </div>
+
+  <div class="showcase-list">
+
+    <!-- 01 — FINANCEIRA EMPRESARIAL -->
+    <div class="showcase-item fade-in">
+      <div class="showcase-img">
+        <span class="showcase-num">01</span>
+        <!-- IMAGEM: substitua a div abaixo por <img src="sua-imagem.png" alt="Planilha Financeira Empresarial" class="sheet-preview"> -->
+        <div class="img-placeholder">
+          <i class="fa-regular fa-image"></i>
+          <span>Inserir imagem da planilha</span>
+        </div>
+      </div>
+      <div class="showcase-info">
+        <span class="section-label">Planilha 1</span>
+        <h3>Financeira <em>Empresarial</em></h3>
+        <p>Visão completa da saúde financeira do escritório. Acompanhe receitas, despesas, honorários em aberto e o resultado do mês — tudo com dashboards automáticos.</p>
+        <ul class="showcase-features">
+          <li><i class="fa-solid fa-check"></i> Fluxo de caixa mensal e acumulado</li>
+          <li><i class="fa-solid fa-check"></i> Controle de honorários por cliente</li>
+          <li><i class="fa-solid fa-check"></i> Despesas fixas, variáveis e extraordinárias</li>
+          <li><i class="fa-solid fa-check"></i> DRE simplificado com resultado do período</li>
+          <li><i class="fa-solid fa-check"></i> Dashboard financeiro com gráficos automáticos</li>
+          <li><i class="fa-solid fa-check"></i> Reserva e provisão de caixa</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 02 — FINANCEIRA PESSOAL -->
+    <div class="showcase-item reverse fade-in">
+      <div class="showcase-img">
+        <span class="showcase-num">02</span>
+        <!-- IMAGEM: substitua a div abaixo por <img src="sua-imagem.png" alt="Planilha Financeira Pessoal" class="sheet-preview"> -->
+        <div class="img-placeholder">
+          <i class="fa-regular fa-image"></i>
+          <span>Inserir imagem da planilha</span>
+        </div>
+      </div>
+      <div class="showcase-info">
+        <span class="section-label">Planilha 2</span>
+        <h3>Financeira <em>Pessoal</em></h3>
+        <p>Mantenha as finanças pessoais separadas do escritório. Controle de gastos mensais, cartões, metas de curto e longo prazo e acompanhamento de patrimônio.</p>
+        <ul class="showcase-features">
+          <li><i class="fa-solid fa-check"></i> Orçamento mensal com categorias personalizáveis</li>
+          <li><i class="fa-solid fa-check"></i> Controle de faturas e cartões de crédito</li>
+          <li><i class="fa-solid fa-check"></i> Metas financeiras com acompanhamento de progresso</li>
+          <li><i class="fa-solid fa-check"></i> Visão de patrimônio: ativos e passivos</li>
+          <li><i class="fa-solid fa-check"></i> Comparativo mensal de receitas vs despesas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 03 — CONTROLE DE CONTRATOS -->
+    <div class="showcase-item fade-in">
+      <div class="showcase-img">
+        <span class="showcase-num">03</span>
+        <!-- IMAGEM: substitua a div abaixo por <img src="sua-imagem.png" alt="Planilha Controle de Contratos" class="sheet-preview"> -->
+        <div class="img-placeholder">
+          <i class="fa-regular fa-image"></i>
+          <span>Inserir imagem da planilha</span>
+        </div>
+      </div>
+      <div class="showcase-info">
+        <span class="section-label">Planilha 3</span>
+        <h3>Controle de <em>Contratos</em></h3>
+        <p>Nunca mais perca um contrato vencido ou uma renovação em aberto. Todos os acordos firmados com clientes e fornecedores centralizados e rastreados.</p>
+        <ul class="showcase-features">
+          <li><i class="fa-solid fa-check"></i> Cadastro completo de contratos ativos</li>
+          <li><i class="fa-solid fa-check"></i> Alertas de vencimento e renovação</li>
+          <li><i class="fa-solid fa-check"></i> Histórico de clientes e valores acordados</li>
+          <li><i class="fa-solid fa-check"></i> Status de cada contrato (ativo, encerrado, renovado)</li>
+          <li><i class="fa-solid fa-check"></i> Visão geral de contratos por período</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 04 — PROCESSOS ADMINISTRATIVOS -->
+    <div class="showcase-item reverse fade-in">
+      <div class="showcase-img">
+        <span class="showcase-num">04</span>
+        <!-- IMAGEM: substitua a div abaixo por <img src="sua-imagem.png" alt="Planilha Processos Administrativos" class="sheet-preview"> -->
+        <div class="img-placeholder">
+          <i class="fa-regular fa-image"></i>
+          <span>Inserir imagem da planilha</span>
+        </div>
+      </div>
+      <div class="showcase-info">
+        <span class="section-label">Planilha 4</span>
+        <h3>Processos <em>Administrativos</em></h3>
+        <p>Organização e rastreabilidade do setor administrativo. Controle de protocolos, registro de documentos enviados e recebidos, com histórico por data e responsável.</p>
+        <ul class="showcase-features">
+          <li><i class="fa-solid fa-check"></i> Registro de protocolos com número e data</li>
+          <li><i class="fa-solid fa-check"></i> Controle de documentos enviados e recebidos</li>
+          <li><i class="fa-solid fa-check"></i> Acompanhamento de prazos internos</li>
+          <li><i class="fa-solid fa-check"></i> Histórico de atividades por responsável</li>
+          <li><i class="fa-solid fa-check"></i> Filtro por setor, tipo e status</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 05 — PROCESSOS JUDICIAIS -->
+    <div class="showcase-item fade-in">
+      <div class="showcase-img">
+        <span class="showcase-num">05</span>
+        <!-- IMAGEM: substitua a div abaixo por <img src="sua-imagem.png" alt="Planilha Processos Judiciais" class="sheet-preview"> -->
+        <div class="img-placeholder">
+          <i class="fa-regular fa-image"></i>
+          <span>Inserir imagem da planilha</span>
+        </div>
+      </div>
+      <div class="showcase-info">
+        <span class="section-label">Planilha 5</span>
+        <h3>Processos <em>Judiciais</em></h3>
+        <p>Visão 360° de todos os processos do escritório. Acompanhe prazos processuais, audiências, andamentos e distribuição por advogado responsável — sem nada escapar.</p>
+        <ul class="showcase-features">
+          <li><i class="fa-solid fa-check"></i> Painel de processos ativos com status</li>
+          <li><i class="fa-solid fa-check"></i> Controle de prazos processuais por data</li>
+          <li><i class="fa-solid fa-check"></i> Agenda de audiências com local e resultado</li>
+          <li><i class="fa-solid fa-check"></i> Histórico cronológico de andamentos</li>
+          <li><i class="fa-solid fa-check"></i> Distribuição de processos por advogado</li>
+          <li><i class="fa-solid fa-check"></i> Carteira de clientes vinculada aos processos</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /showcase-list -->
+</section>
+
+<!-- CONTEÚDO -->
+<section class="conteudo" id="conteudo">
+  <div class="container">
+    <div class="conteudo-header fade-in">
+      <span class="section-label">O que está incluso</span>
+      <h2>Explore o conteúdo de <em>cada planilha.</em></h2>
+      <p>Clique em cada aba e veja exatamente o que você vai receber em cada produto.</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active"  onclick="switchTab('fin-emp',this)">Fin. Empresarial</button>
+      <button class="tab" onclick="switchTab('fin-pes',this)">Fin. Pessoal</button>
+      <button class="tab" onclick="switchTab('contratos',this)">Contratos</button>
+      <button class="tab" onclick="switchTab('proc-adm',this)">Proc. Administrativos</button>
+      <button class="tab" onclick="switchTab('proc-jud',this)">Proc. Judiciais</button>
+    </div>
+
+    <!-- FINANCEIRA EMPRESARIAL -->
+    <div class="tab-content active" id="tab-fin-emp">
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-chart-line"></i></div><div><div class="sheet-title">Fluxo de Caixa Mensal</div><div class="sheet-sub">Entradas, saídas e saldo em tempo real</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><div><div class="sheet-title">Controle de Honorários</div><div class="sheet-sub">Clientes, valores, vencimentos e inadimplências</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-arrow-trend-down"></i></div><div><div class="sheet-title">Despesas do Escritório</div><div class="sheet-sub">Fixas, variáveis e extraordinárias</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-gauge-high"></i></div><div><div class="sheet-title">Dashboard Financeiro</div><div class="sheet-sub">Gráficos automáticos e indicadores do período</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-building-columns"></i></div><div><div class="sheet-title">Reserva e Provisão de Caixa</div><div class="sheet-sub">Planejamento de reservas e provisionamentos</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-receipt"></i></div><div><div class="sheet-title">DRE Simplificado</div><div class="sheet-sub">Resultado mensal e acumulado do ano</div></div></div>
+    </div>
+
+    <!-- FINANCEIRA PESSOAL -->
+    <div class="tab-content" id="tab-fin-pes">
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-house"></i></div><div><div class="sheet-title">Orçamento Mensal Pessoal</div><div class="sheet-sub">Receitas, despesas e saldo pessoal por mês</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-credit-card"></i></div><div><div class="sheet-title">Controle de Cartões</div><div class="sheet-sub">Faturas, vencimentos e gastos por categoria</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-bullseye"></i></div><div><div class="sheet-title">Metas Financeiras</div><div class="sheet-sub">Objetivos de curto, médio e longo prazo</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-chart-pie"></i></div><div><div class="sheet-title">Patrimônio Pessoal</div><div class="sheet-sub">Ativos, passivos e evolução patrimonial</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-chart-bar"></i></div><div><div class="sheet-title">Comparativo Mensal</div><div class="sheet-sub">Receitas vs despesas pessoais mês a mês</div></div></div>
+    </div>
+
+    <!-- CONTROLE DE CONTRATOS -->
+    <div class="tab-content" id="tab-contratos">
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-file-contract"></i></div><div><div class="sheet-title">Cadastro de Contratos</div><div class="sheet-sub">Todos os contratos firmados em um lugar só</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-calendar-xmark"></i></div><div><div class="sheet-title">Vencimentos e Renovações</div><div class="sheet-sub">Alertas por data de encerramento do contrato</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-user-tie"></i></div><div><div class="sheet-title">Histórico por Cliente</div><div class="sheet-sub">Contratos e valores por cliente ao longo do tempo</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-circle-check"></i></div><div><div class="sheet-title">Status dos Contratos</div><div class="sheet-sub">Ativo, encerrado, renovado ou em negociação</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></div><div><div class="sheet-title">Visão por Período</div><div class="sheet-sub">Contratos por faixa de data e valor</div></div></div>
+    </div>
+
+    <!-- PROCESSOS ADMINISTRATIVOS -->
+    <div class="tab-content" id="tab-proc-adm">
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-box-archive"></i></div><div><div class="sheet-title">Registro de Protocolos</div><div class="sheet-sub">Número, data, tipo e destino de cada protocolo</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-file-arrow-up"></i></div><div><div class="sheet-title">Documentos Enviados</div><div class="sheet-sub">Rastreio de documentos expedidos pelo escritório</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div><div class="sheet-title">Documentos Recebidos</div><div class="sheet-sub">Controle de documentos recebidos por data</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-calendar-check"></i></div><div><div class="sheet-title">Prazos Internos</div><div class="sheet-sub">Acompanhamento de prazos do setor administrativo</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-filter"></i></div><div><div class="sheet-title">Filtro por Setor e Status</div><div class="sheet-sub">Visão segmentada por área e situação do processo</div></div></div>
+    </div>
+
+    <!-- PROCESSOS JUDICIAIS -->
+    <div class="tab-content" id="tab-proc-jud">
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-scale-balanced"></i></div><div><div class="sheet-title">Painel de Processos</div><div class="sheet-sub">Todos os casos ativos com número, parte e status</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-calendar-days"></i></div><div><div class="sheet-title">Controle de Prazos Processuais</div><div class="sheet-sub">Prazos fatais, intimações e datas por processo</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-landmark"></i></div><div><div class="sheet-title">Agenda de Audiências</div><div class="sheet-sub">Datas, locais, tipo e resultado de cada audiência</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-file-lines"></i></div><div><div class="sheet-title">Histórico de Andamentos</div><div class="sheet-sub">Registro cronológico de movimentações processuais</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-thumbtack"></i></div><div><div class="sheet-title">Distribuição por Advogado</div><div class="sheet-sub">Carga de processos e responsabilidades por advogado</div></div></div>
+      <div class="sheet-item"><div class="sheet-icon"><i class="fa-solid fa-address-book"></i></div><div><div class="sheet-title">Carteira de Clientes</div><div class="sheet-sub">Clientes, contatos e processos vinculados</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="planos">
+  <div class="container">
+    <div class="pricing-header fade-in">
+      <span class="section-label">Escolha seu plano</span>
+      <h2>Invista no que faz sentido <em>para você agora.</em></h2>
+      <p>Escolha um dos combos e economize — ou compre planilhas individuais se preferir começar por uma área específica.</p>
+    </div>
+
+    <!-- COMBOS -->
+    <div class="plans-grid">
+
+      <!-- PLANO FINANCEIRO -->
+      <div class="plan fade-in">
+        <div class="plan-name">Combo 1</div>
+        <div class="plan-title">Financeiro</div>
+        <div class="plan-desc">As duas planilhas financeiras para separar e controlar o dinheiro do escritório e o pessoal.</div>
+        <div class="plan-price">
+          <div class="de">De R$ 494</div>
+          <div class="por"><span class="currency">R$</span><span class="amount">147</span></div>
+          <div class="parcela">ou 12x de R$ 15,20</div>
+          <div class="economy-tag"><i class="fa-solid fa-tag"></i> Você economiza R$ 347</div>
+        </div>
+        <ul class="plan-features">
+          <li>Financeira Empresarial</li>
+          <li>Financeira Pessoal</li>
+          <li>Fluxo de caixa + DRE completo</li>
+          <li>Dashboard financeiro automático</li>
+          <li>Controle de honorários e despesas</li>
+          <li>Metas e patrimônio pessoal</li>
+          <li class="inactive">Controle de Contratos</li>
+          <li class="inactive">Processos Administrativos</li>
+          <li class="inactive">Processos Judiciais</li>
+        </ul>
+        <a href="https://pay.kiwify.com.br/mjbL4UV" class="plan-cta outline">Quero este combo</a>
+      </div>
+
+      <!-- COMBO COMPLETO — destaque central -->
+      <div class="plan featured fade-in">
+        <div class="plan-badge"><i class="fa-solid fa-star" style="font-size:0.6rem;"></i> Melhor custo-benefício</div>
+        <div class="plan-name">Combo Completo</div>
+        <div class="plan-title">Todas as 5</div>
+        <div class="plan-desc">O escritório organizado de ponta a ponta. Financeiro, contratos e processos em um único acesso.</div>
+        <div class="plan-price">
+          <div class="de">De R$ 875</div>
+          <div class="por"><span class="currency">R$</span><span class="amount">297</span></div>
+          <div class="parcela">ou 12x de R$ 30,72</div>
+          <div class="economy-tag economy-gold"><i class="fa-solid fa-tag"></i> Você economiza R$ 578</div>
+        </div>
+        <ul class="plan-features">
+          <li>Financeira Empresarial</li>
+          <li>Financeira Pessoal</li>
+          <li>Controle de Contratos</li>
+          <li>Processos Administrativos</li>
+          <li>Processos Judiciais</li>
+          <li>Guia de implementação incluso</li>
+          <li>Atualizações por 12 meses</li>
+          <li>Menor preço por planilha</li>
+        </ul>
+        <a href="https://pay.kiwify.com.br/uATFCfl" class="plan-cta gold">Quero o combo completo</a>
+      </div>
+
+      <!-- PLANO JURÍDICO -->
+      <div class="plan fade-in">
+        <div class="plan-name">Combo 2</div>
+        <div class="plan-title">Jurídico</div>
+        <div class="plan-desc">As três planilhas operacionais para controle completo de contratos e processos do escritório.</div>
+        <div class="plan-price">
+          <div class="de">De R$ 381</div>
+          <div class="por"><span class="currency">R$</span><span class="amount">197</span></div>
+          <div class="parcela">ou 12x de R$ 20,37</div>
+          <div class="economy-tag"><i class="fa-solid fa-tag"></i> Você economiza R$ 184</div>
+        </div>
+        <ul class="plan-features">
+          <li>Controle de Contratos</li>
+          <li>Processos Administrativos</li>
+          <li>Processos Judiciais</li>
+          <li>Controle de prazos e audiências</li>
+          <li>Registro de protocolos</li>
+          <li>Distribuição por advogado</li>
+          <li class="inactive">Financeira Empresarial</li>
+          <li class="inactive">Financeira Pessoal</li>
+        </ul>
+        <a href="https://pay.kiwify.com.br/C0RyaId" class="plan-cta outline">Quero este combo</a>
+      </div>
+
+    </div><!-- /plans-grid -->
+
+    <!-- BOTÃO EXPANDIR INDIVIDUAIS -->
+    <div class="individual-toggle fade-in">
+      <button class="individual-btn" id="btnIndividual" onclick="toggleIndividual()">
+        <span id="btnIndividualText">Prefiro comprar uma planilha individual</span>
+        <i class="fa-solid fa-chevron-down" id="btnIndividualIcon"></i>
+      </button>
+      <p class="individual-hint">Cada planilha também está disponível separadamente</p>
+    </div>
+
+    <!-- GRID INDIVIDUAIS — oculto por padrão -->
+    <div class="individual-grid" id="individualGrid">
+      <div class="individual-header">
+        <span class="section-label" style="text-align:center;display:block;">Planilhas individuais</span>
+        <p>Comece pela área que faz mais sentido para o seu momento.</p>
+      </div>
+      <div class="ind-grid">
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-coins"></i></div>
+          <div class="ind-num">1</div>
+          <div class="ind-title">Financeira Empresarial</div>
+          <div class="ind-desc">Fluxo de caixa, honorários, despesas, DRE e dashboard do escritório.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 297</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">97</span></span>
+          </div>
+          <a href="https://pay.kiwify.com.br/7mBXUvR" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-house-user"></i></div>
+          <div class="ind-num">2</div>
+          <div class="ind-title">Financeira Pessoal</div>
+          <div class="ind-desc">Orçamento mensal, cartões, metas financeiras e patrimônio pessoal.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 197</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">57</span></span>
+          </div>
+          <a href="https://pay.kiwify.com.br/IIDZUHq" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="ind-num">3</div>
+          <div class="ind-title">Processos Judiciais</div>
+          <div class="ind-desc">Painel de processos, prazos, audiências e andamentos por advogado.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 127</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">67</span></span>
+          </div>
+          <a href="https://pay.kiwify.com.br/h110bbr" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+          <div class="ind-num">4</div>
+          <div class="ind-title">Processos Administrativos</div>
+          <div class="ind-desc">Protocolos, documentos enviados e recebidos, prazos internos do setor.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 127</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">67</span></span>
+          </div>
+          <a href="https://pay.kiwify.com.br/qOb5nIZ" class="ind-cta">Comprar agora</a>
+        </div>
+
+        <div class="ind-card fade-in">
+          <div class="ind-icon"><i class="fa-solid fa-file-contract"></i></div>
+          <div class="ind-num">5</div>
+          <div class="ind-title">Controle de Contratos</div>
+          <div class="ind-desc">Cadastro, vencimentos, renovações e histórico de todos os contratos.</div>
+          <div class="ind-price">
+            <span class="ind-de">De R$ 127</span>
+            <span class="ind-por"><span class="ind-currency">R$</span><span class="ind-amount">67</span></span>
+          </div>
+          <a href="https://pay.kiwify.com.br/Tj915sQ" class="ind-cta">Comprar agora</a>
+        </div>
+
+      </div><!-- /ind-grid -->
+
+      <!-- Nudge para o combo -->
+      <div class="ind-nudge fade-in">
+        <i class="fa-solid fa-circle-info" style="color:var(--gold);font-size:0.9rem;flex-shrink:0;margin-top:0.1rem;"></i>
+        <p>Comprando o <strong style="color:var(--cream);">Combo Completo por R$ 297</strong> você leva as 5 planilhas e economiza R$ 281 em relação às individuais somadas.</p>
+        <a href="#planos" class="ind-nudge-btn" onclick="scrollToPlans()">Ver combos</a>
+      </div>
+
+    </div><!-- /individual-grid -->
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     AVALIAÇÕES — CARROSSEL AUTOMÁTICO
+══════════════════════════════════════════ -->
+<section class="avaliacoes" id="avaliacoes">
+  <div class="container">
+    <div class="avaliacoes-header fade-in">
+      <span class="section-label">Avaliações reais</span>
+      <h2>Quem já usa, <em>não abre mão.</em></h2>
+      <p>Veja o que gestoras e advogados estão dizendo sobre as planilhas.</p>
+    </div>
+    <div class="stars-summary fade-in">
+      <div class="star-stat"><span class="star-big">4,9</span><span class="star-icons">★★★★★</span><span class="star-label">Avaliação média</span></div>
+      <div class="stat-divider"></div>
+      <div class="star-stat"><span class="star-big">200+</span><span class="star-icons" style="color:var(--bordeaux);">■■■■■</span><span class="star-label">Clientes satisfeitos</span></div>
+      <div class="stat-divider"></div>
+      <div class="star-stat"><span class="star-big">98%</span><span class="star-icons" style="color:var(--gold-dim);">★★★★★</span><span class="star-label">Recomendam</span></div>
+    </div>
+  </div>
+
+  <!-- Carrossel de ponta a ponta -->
+  <div class="carousel-outer">
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- CARD 1 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua o conteúdo desta div por <img src="foto.jpg" alt="Nome"> -->
+            A
+          </div>
+          <div>
+            <div class="review-name">Ana Carolina M.</div>
+            <div class="review-role">Gestora · Escritório de Família</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">Finalmente consegui separar as finanças do escritório das pessoais. O dashboard me deu uma visão que eu não sabia que estava precisando.</div>
+        <span class="review-tag">Plano Completo</span>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            R
+          </div>
+          <div>
+            <div class="review-name">Renata S.</div>
+            <div class="review-role">Advogada · Solo</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">Nunca mais perdi prazo. O controle de processos é simples e funcional. Valia muito mais do que paguei.</div>
+        <span class="review-tag">Plano Jurídico</span>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            M
+          </div>
+          <div>
+            <div class="review-name">Mariana F.</div>
+            <div class="review-role">Gestora Administrativa · Banca Societária</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">Apresentei o relatório financeiro para os sócios com dados organizados pela primeira vez em anos. A reação foi de surpresa total.</div>
+        <span class="review-tag">Plano Completo</span>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            L
+          </div>
+          <div>
+            <div class="review-name">Larissa T.</div>
+            <div class="review-role">Advogada · Trabalhista</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">Agora sei exatamente o que entra, o que sai e o que sobra. Isso mudou minha relação com o dinheiro do escritório de vez.</div>
+        <span class="review-tag">Plano Financeiro</span>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            C
+          </div>
+          <div>
+            <div class="review-name">Camila P.</div>
+            <div class="review-role">Gestora · Escritório Cível</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">A planilha de protocolos organizou o caos do dia a dia em menos de uma semana. A equipe aderiu imediatamente.</div>
+        <span class="review-tag">Plano Completo</span>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            J
+          </div>
+          <div>
+            <div class="review-name">Juliana A.</div>
+            <div class="review-role">Advogada Sócia · Tributário</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">O investimento se pagou no primeiro mês. Identifiquei honorários esquecidos parados há mais de 60 dias. Material excepcional.</div>
+        <span class="review-tag">Plano Financeiro</span>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            P
+          </div>
+          <div>
+            <div class="review-name">Patrícia V.</div>
+            <div class="review-role">Gestora · Escritório Previdenciário</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">Eu me perdia tanto no controle de processos que os próprios clientes notavam. Com a planilha jurídica, tudo ficou visível e rastreável.</div>
+        <span class="review-tag">Plano Jurídico</span>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-photo">
+            <!-- FOTO: substitua por <img src="foto.jpg" alt="Nome"> -->
+            B
+          </div>
+          <div>
+            <div class="review-name">Beatriz C.</div>
+            <div class="review-role">Advogada · Criminal</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-quote">Simples, elegante e funcional. Em 30 minutos já estava com tudo configurado. Não precisei de nenhum tutorial para começar.</div>
+        <span class="review-tag">Plano Completo</span>
+      </div>
+
+      <!-- ── DUPLICATAS para loop infinito perfeito ── -->
+      <div class="review-card"><div class="review-header"><div class="review-photo">A</div><div><div class="review-name">Ana Carolina M.</div><div class="review-role">Gestora · Escritório de Família</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">Finalmente consegui separar as finanças do escritório das pessoais. O dashboard me deu uma visão que eu não sabia que estava precisando.</div><span class="review-tag">Plano Completo</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">R</div><div><div class="review-name">Renata S.</div><div class="review-role">Advogada · Solo</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">Nunca mais perdi prazo. O controle de processos é simples e funcional. Valia muito mais do que paguei.</div><span class="review-tag">Plano Jurídico</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">M</div><div><div class="review-name">Mariana F.</div><div class="review-role">Gestora Administrativa · Banca Societária</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">Apresentei o relatório financeiro para os sócios com dados organizados pela primeira vez em anos. A reação foi de surpresa total.</div><span class="review-tag">Plano Completo</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">L</div><div><div class="review-name">Larissa T.</div><div class="review-role">Advogada · Trabalhista</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">Agora sei exatamente o que entra, o que sai e o que sobra. Isso mudou minha relação com o dinheiro do escritório de vez.</div><span class="review-tag">Plano Financeiro</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">C</div><div><div class="review-name">Camila P.</div><div class="review-role">Gestora · Escritório Cível</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">A planilha de protocolos organizou o caos do dia a dia em menos de uma semana. A equipe aderiu imediatamente.</div><span class="review-tag">Plano Completo</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">J</div><div><div class="review-name">Juliana A.</div><div class="review-role">Advogada Sócia · Tributário</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">O investimento se pagou no primeiro mês. Identifiquei honorários esquecidos parados há mais de 60 dias.</div><span class="review-tag">Plano Financeiro</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">P</div><div><div class="review-name">Patrícia V.</div><div class="review-role">Gestora · Escritório Previdenciário</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">Com a planilha jurídica, tudo ficou visível e rastreável. Transformador para a organização do escritório inteiro.</div><span class="review-tag">Plano Jurídico</span></div>
+      <div class="review-card"><div class="review-header"><div class="review-photo">B</div><div><div class="review-name">Beatriz C.</div><div class="review-role">Advogada · Criminal</div><div class="review-stars">★★★★★</div></div></div><div class="review-quote">Simples, elegante e funcional. Em 30 minutos já estava com tudo configurado. Não precisei de nenhum tutorial para começar.</div><span class="review-tag">Plano Completo</span></div>
+
+    </div><!-- /carousel-track -->
+  </div><!-- /carousel-outer -->
+
+</section>
+
+<!-- GARANTIA -->
+<section class="garantia" id="garantia">
+  <div class="container">
+    <div class="garantia-box fade-in">
+      <div class="garantia-seal">7 dias<br>de<br>garantia</div>
+      <span class="section-label" style="text-align:center;display:block;">Risco zero</span>
+      <h2>Se não gostar, <em>devolvemos tudo.</em></h2>
+      <div class="gold-line"></div>
+      <p>Você tem 7 dias para testar as planilhas sem nenhum compromisso. Se sentir que não era o que precisava, basta entrar em contato e devolvemos 100% do valor — sem burocracia, sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header fade-in"><span class="section-label">Dúvidas</span><h2>Perguntas <em>frequentes</em></h2></div>
+    <div class="faq-grid">
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">As planilhas funcionam no Google Sheets?</div><div class="faq-answer"><p>Sim! Todas as planilhas são compatíveis com Microsoft Excel e Google Sheets. Você recebe os arquivos em .xlsx e pode importar diretamente no Google Drive.</p></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Preciso ter conhecimento avançado em planilhas?</div><div class="faq-answer"><p>Não. As planilhas foram desenvolvidas para serem intuitivas e prontas para usar. Basta preencher os dados e os cálculos e dashboards são gerados automaticamente.</p></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Posso personalizar as planilhas para o meu escritório?</div><div class="faq-answer"><p>Sim, totalmente! As planilhas são editáveis e você pode adaptar nomes, categorias, estrutura de setores e qualquer outro campo às necessidades do escritório.</p></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Como recebo os materiais após a compra?</div><div class="faq-answer"><p>Imediatamente após a confirmação do pagamento, você recebe um e-mail com o link para baixar todos os arquivos do seu plano. Entrega instantânea, 24h por dia.</p></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">É possível usar em mais de um dispositivo?</div><div class="faq-answer"><p>Sim. Os arquivos são seus e você pode usar em quantos dispositivos quiser, inclusive compartilhar com a equipe dentro do escritório.</p></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Os planos têm atualizações futuras?</div><div class="faq-answer"><p>Compradores do Plano Completo têm acesso a atualizações das planilhas por 12 meses. Novas planilhas podem ser adquiridas com desconto exclusivo para clientes.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="urgency fade-in"><i class="fa-regular fa-clock" style="margin-right:0.4rem;"></i> Oferta por tempo limitado</div>
+    <h2 class="fade-in">Chega de gestão <em>no improviso.</em></h2>
+    <p class="fade-in">Seu escritório merece uma estrutura profissional. Comece hoje, com garantia total de 7 dias.</p>
+    <a href="#planos" class="btn-primary fade-in">Escolher meu plano agora</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Gestão Jurídica Pro</div>
+  <div class="footer-note">© 2025 · Desenvolvido com excelência para escritórios de advocacia</div>
+</footer>
+
+<script>
+  /* TOGGLE INDIVIDUAIS */
+  function toggleIndividual() {
+    const grid = document.getElementById('individualGrid');
+    const btn  = document.getElementById('btnIndividual');
+    const txt  = document.getElementById('btnIndividualText');
+    const open = grid.classList.toggle('open');
+    document.getElementById('btnIndividual').closest('button')?.classList.toggle('open', open);
+    document.querySelector('.individual-btn').classList.toggle('open', open);
+    txt.textContent = open ? 'Fechar planilhas individuais' : 'Prefiro comprar uma planilha individual';
+    if (open) {
+      setTimeout(() => {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 60);
+    }
+  }
+
+  function scrollToPlans() {
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  /* TABS */
+  function switchTab(id, el) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    el.classList.add('active');
+  }
+
+  /* FAQ */
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const was = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!was) item.classList.add('open');
+  }
+
+  /* FADE IN */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  /* NAV SCROLL */
+  /* ── TEMA CLARO/ESCURO ── */
+  function getNavBg(scrolled) {
+    const light = document.documentElement.classList.contains('light');
+    return light
+      ? (scrolled ? 'rgba(250,248,243,0.98)' : 'rgba(250,248,243,0.92)')
+      : (scrolled ? 'rgba(14,10,10,0.98)'    : 'rgba(14,10,10,0.88)');
+  }
+
+  function toggleTheme() {
+    const isLight = document.documentElement.classList.toggle('light');
+    const icon    = document.getElementById('themeIcon');
+    /* Sol = modo escuro ativo (clicar vai para claro)
+       Lua = modo claro ativo  (clicar vai para escuro) */
+    icon.className = isLight ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    localStorage.setItem('gjp-theme', isLight ? 'light' : 'dark');
+    document.querySelector('nav').style.background = getNavBg(window.scrollY > 60);
+  }
+
+  /* Inicializa tema salvo */
+  (function initTheme() {
+    if (localStorage.getItem('gjp-theme') === 'light') {
+      document.documentElement.classList.add('light');
+      const icon = document.getElementById('themeIcon');
+      if (icon) icon.className = 'fa-solid fa-moon';
+    }
+  })();
+
+  /* Nav scroll */
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.background = getNavBg(window.scrollY > 60);
+  });
+
+  /* ── CARROSSEL ── */
+  const track = document.getElementById('carouselTrack');
+  let paused = false;
+
+  /* Prev / Next — pausa a animação CSS e move com translateX */
+  const STEP = 340 + 24; // largura do card + gap
+
+  function nudge(dir) {
+    if (!paused) {
+      paused = true;
+      track.style.animationPlayState = 'paused';
+    }
+    const style = window.getComputedStyle(track);
+    const mat   = new DOMMatrixReadOnly(style.transform);
+    let pos = mat.m41;
+    const half = track.scrollWidth / 2;
+
+    pos += dir * STEP;
+    if (pos > 0) pos = -(half - STEP);
+    if (pos < -half) pos = 0;
+
+    track.style.transition = 'transform 0.38s ease';
+    track.style.transform  = `translateX(${pos}px)`;
+    setTimeout(() => { track.style.transition = ''; }, 400);
+  }
+
+  document.getElementById('btnPrev').addEventListener('click', () => nudge(1));
+  document.getElementById('btnNext').addEventListener('click', () => nudge(-1));
+</script>
+</body>
+</html>
